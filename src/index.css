@@ -1,0 +1,214 @@
+:root {
+  --shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.header {
+  width: 1000px;
+  padding: 20px;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: var(--shadow);
+}
+
+.avatar {
+  width: 400px;
+  clip-path: circle();
+}
+
+.title {
+  font-size: 36px;
+}
+
+.money {
+  width: 1000px;
+  margin-top: 10px;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(180deg,#2ecc71,#1abc9c);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+}
+
+.balance {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.container {
+  width:1040px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.itemBox {
+  flex-grow: 1;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  padding: 0px 20px;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+}
+
+.itemBox img {
+  display: block;
+  height: 120px;
+  max-width: 240px;
+  padding: 10px;
+}
+
+.itemBox .itemName {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.itemBox .price {
+  color: #24c486;
+  font-size: 24px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sellBtn {
+  transition-duration: 0.4s;
+  padding: 10px 20px;
+  cursor: pointer;
+  background: linear-gradient(180deg, #f53b82, #f53b57);
+  border: none;
+  color: #fff;
+  border-radius: 0.5rem;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.buyBtn {
+  transition-duration: 0.4s;
+  padding: 10px 20px;
+  cursor: pointer;
+  background: linear-gradient(180deg,#2ecc71,#1abc9c);
+  border: none;
+  color: #fff;
+  border-radius: 0.5rem;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.btnDisable {
+  transition-duration: 0.4s;
+  background-color: #f1f2f6;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 0.5rem;
+  color: #333;
+  cursor: auto;
+}
+
+.amount {
+  border: 1px solid #b2bec3;
+  border-radius: 0.5rem;
+  width: 100px;
+  text-align: center;
+}
+
+.receipt {
+  width: 1040px;
+  padding: 20px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: var(--shadow);
+}
+
+.receipt .title {
+  font-size: 32px;
+}
+
+.bill {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+}
+
+.purchased {
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: grid;
+  grid-gap: 10px 0;
+  font-size: 18px;
+  grid-template-columns: 170px 45px 75px;
+}
+
+.purchased .itemName {
+  text-align: left;
+  text-overflow: ellipsis;
+}
+
+.purchased .quantity {
+  text-align: left;
+}
+
+.purchased .price {
+  text-align: right;
+  font-weight: 900;
+  color: #24c486;
+}
+
+.total {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.total .totalTitle {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.total .totalPrice {
+  font-weight: 900;
+  color: #24c486;
+}
+
+.footer {
+  border-radius: 0.5rem;
+  padding: 20px;
+  margin-top: 10px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: var(--shadow);
+  margin-bottom: 10px;
+}
+
+.footer span {
+  font-size: 20px;
+}
